@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="expense.css">
+</head>
+<body>
+    <div>
+        <p class="premium-btn" id="premium-user" style="display:none ;">Premium User</p>
+        <button  class="premium-btn" id="rzp-button">Buy Premium Membership</button>
+        <button  class="leaderboard" id="lb-button" style="display:none ;">Show Leaderboard</button>
+        <button  class="leaderboard" id="download-button" style="display:none ;">Download Expense</button>
+        
+    </div>
+    
+    <div>
+        <form onsubmit="addExpense(event)">
+            <label for="expenseamount">ExpenseAmount :</label>
+            <input type="number" name="expenseamount"  required>
+            <label for="description">Description:</label>
+            <input type="text" name="description"  required>
+            <label for="category">Category
+                <select name="category">
+                    <option value="food">Food</option>
+                    <option value="household">Household</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="travel">Travel</option>
+                    <option value="academic">Academic</option>
+                </select>
+            </label>
+            <button type="submit">Add</button>
+        </form>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ExpenseAmount</th>
+                <th>Category</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">   
+        </tbody>
+    </table>
+        <div id="leaderboard" style="display:none ;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Total Expense</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody1">   
+                </tbody>
+        </div>
+
+</body>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="expense.js"></script>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "expensetracker",
+  "version": "1.0.0",
+  "description": "ExpenceTracker",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Sumit raj",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "exceljs": "^4.4.0",
+    "expensetracker": "file:",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.11.5",
+    "nodemailer": "^6.9.16",
+    "nodemon": "^3.1.7",
+    "pdfkit": "^0.15.2",
+    "randomstring": "^1.3.0",
+    "razorpay": "^2.9.5"
+  }
+}
